@@ -2,6 +2,28 @@
 
 .section-about {
     background-color: $color-light-gray;
-    padding: 25rem  0;
+    padding: 25rem 0;
     margin-top: -20vh;
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image:
+        linear-gradient(to right, rgba($color-light-primary, 0.8), rgba($color-dark-primary, 0.8)),
+        url("../img/nat-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    transform: skewY(-7deg);
+    margin-top: -12rem;
+
+    //direct child selector > 
+    //.section-feature > * 
+    //تمامی فرزندان مستقیم کلاس رو انتخاب می کند
+
+    &>* {
+        transform: skewY(7deg);
+    }
+
 }
